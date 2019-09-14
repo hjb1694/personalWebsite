@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <%- include('./partials/head.ejs'); %>
+    <body>
+        <header class="header">
+            <div class="header__hero">
+                <img class="portrait" src="/img/portraitcropped.jpg"/>
+                <h1 class="header__logo">
+                    <div class="header__logo--1">Masterpieces</div>
+                    <div class="header__logo--2">by Hayden</div>
+                </h1>
+            </div>
+            <div class="header__navbtn">
+                <i class="fa fa-bars"></i>
+            </div>
+        </header>
+        <nav class="nav">
+            <div class="nav__linkset">
+            <a class="nav__link nav__link--1">about</a>
+            <a class="nav__link nav__link--2">portfolio</a>
+            <a class="nav__link nav__link--3">contact</a>
+            </div>
+        </nav>
+        <section class="about-section">
+            <div class="about-section__text">
+                <h2 style="margin-bottom:2rem;">My Skills, Interests, and Talents</h2>
+                <div class="skill-list">
+                    <div class="skill-tile">
+                        <h3 class="skill-tile__header">Writing</h3>
+                        <p class="skill-tile__text">
+                            I possess a talent and enjoyment for writing. Whether that be letters,
+                            short stories, or short poems, I have amazed others with my ability to
+                            write.
+                        </p>
+                    </div>
+                    <div class="skill-tile">
+                        <h3 class="skill-tile__header">HTML + CSS</h3>
+                        <p class="skill-tile__text">
+                            I can structure web content and style it with CSS.
+                            I understand modern approaches including flexbox, CSS grid,
+                            and the use of SCSS.
+                        </p>
+                    </div>
+                    <div class="skill-tile">
+                        <h3 class="skill-tile__header">JavaScript</h3>
+                        <p class="skill-tile__text">I am skilled in JavaScript and can add functionality and behavior to webpages.</p>
+                    </div>
+                    <div class="skill-tile">
+                        <h3 class="skill-tile__header">NodeJs + Express</h3>
+                        <p class="skill-tile__text">
+                            This is my backend technology of choice. NodeJS is beneficial as it provides 
+                            me with the ability to use JS on the serverside.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-two">
+            <h2 class="heading-secondary">My services are tailored to your needs</h2>
+            <div class="feature-list">
+                <div class="feature-list__item">Affordable</div>
+                <div class="feature-list__item">Custom</div>
+                <div class="feature-list__item">Lively</div>
+                <div class="feature-list__item">Personalized</div>
+                <div class="feature-list__item">Sleek</div>
+                <div class="feature-list__item">Modern</div>
+                <div class="feature-list__item">Artistic</div>
+                <div class="feature-list__item">Professional</div>
+                <div class="feature-list__item">Engaging</div>
+                <div class="feature-list__item">Careful</div>
+                <div class="feature-list__item">Accessible</div>
+                <div class="feature-list__item">Vibrant</div>
+                <div class="feature-list__item">Attractive</div>
+                <div class="feature-list__item">Static</div>
+                <div class="feature-list__item">Dynamic</div>
+                <div class="feature-list__item">Commercial</div>
+                <div class="feature-list__item">Non-Profits</div>
+                <div class="feature-list__item">Fitting</div>
+                <div class="feature-list__item">Thorough</div>
+            </div>
+        </section>
+        <section class="section-contact">
+            <h2 class="heading-secondary">Contact Me Today!</h2>
+            <form class="contact-form" method="POST" action="/contactForm">
+                <div class="form-group">
+                    <input type="text" class="contact-form__text-input" placeholder="Name"/>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="contact-form__text-input" placeholder="Email"/>
+                </div>
+                <div class="form-group">
+                    <textarea type="email" class="contact-form__textarea-input" placeholder="Message"></textarea>
+                </div>
+                <button class="btn" type="submit">Submit</button>
+            </form>
+        </section>
+        <footer class="footer">
+            <small>Designed by Hayden Bradfield</small>
+        </footer>
+        <script>
+            document.querySelector('.header__navbtn').addEventListener('click',function(){
+
+                document.querySelector('.nav').classList.toggle('show');
+
+            });
+
+        </script>
+    </body>
+</html>

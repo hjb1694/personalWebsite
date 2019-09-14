@@ -1,0 +1,11 @@
+{
+    "name" : "Hayden Bradfield", 
+    "short_name" : "Hayden Bradfield",
+    "description" : "Official Website of Hayden Bradfield", 
+    "icons" : [], 
+    "background_color" : "", 
+    "oriantation" : "portrait-primary", 
+    "display" : "standalone", 
+    "scope" : ".", 
+    "lang" : "en-US"
+}
